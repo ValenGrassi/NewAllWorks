@@ -6,13 +6,13 @@ const hardwareServices = [
   {
     link: "servicios/camaras",
     icon: Cctv,
-    title: "Instalación de cámaras de seguridad",
+    title: "Instalación de Cámaras de Seguridad",
     description: "Sistemas CCTV profesionales con monitoreo remoto para cobertura completa de seguridad.",
   },
   {
     link: "servicios/sat",
     icon: SatelliteDish,
-    title: "Instalación y orientación de antenas satelitales",
+    title: "Instalación y Orientación de Antenas Satelitales",
     description: "Sistemas de comunicación satelital de alto rendimiento para conectividad confiable en cualquier lugar.",
   },
   {

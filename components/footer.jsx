@@ -12,53 +12,45 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <Link href="/" className="flex items-center text-xl font-bold text-foreground hover:text-primary transition-colors p-2">
-              <Image src={Logo} className="w-10" />
+            <Link href="/" className="flex items-center text-2xl font-bold text-foreground hover:text-primary transition-colors p-2">
+              <Image src={Logo} className="w-12" />
                 All Works
             </Link>
-            <div className="flex space-x-2">
-
-              <Button variant="ghost" size="icon">
-                <Instagram className="w-4 h-4" />
-              </Button>
-              <Button variant="ghost" size="icon">
-                <Linkedin className="w-4 h-4" />
-              </Button>
-            </div>
+            
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold text-card-foreground mb-4">Services</h3>
+            <h3 className="font-semibold text-card-foreground mb-4">Servicios</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Security Cameras
+                  Cámaras de Seguridad
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Satellite Systems
+                  Antenas Satelitales
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Network Installation
+                  Instalación de Redes
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Server Racks
+                  Racks de Servidores
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Solar Panels
+                  Paneles Solares
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Web Development
+                  Desarrollo Web
                 </a>
               </li>
             </ul>
@@ -66,21 +58,21 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold text-card-foreground mb-4">Company</h3>
+            <h3 className="font-semibold text-card-foreground mb-4">Compañía</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  About Us
+                  Nuestra Historia
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Our Team
+                  Valores
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Careers
+                  Misión
                 </a>
               </li>
               <li>
@@ -129,15 +121,15 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center text-muted-foreground">
           <p>&copy; 2025 All Works. Todos los derechos reservados.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-primary transition-colors">
-              Terms of Service
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
-              Cookie Policy
-            </a>
+            <div className="flex space-x-2">
+
+              <Button variant="ghost" size="icon">
+                <Instagram className="w-8 h-8" />
+              </Button>
+              <Button variant="ghost" size="icon">
+                <Linkedin className="w-8 h-8" />
+              </Button>
+            </div>
           </div>
         </div>
       </div>

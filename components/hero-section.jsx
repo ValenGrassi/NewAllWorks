@@ -35,7 +35,7 @@ export function HeroSection() {
                 <Shield className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-1">Confiable</h3>
-              <p className="text-sm text-muted-foreground">+40 años de experiencia</p>
+              <p className="text-sm text-muted-foreground">+30 años de experiencia</p>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3">

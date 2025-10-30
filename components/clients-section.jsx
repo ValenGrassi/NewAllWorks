@@ -2,8 +2,26 @@
 
 import { Card, CardContent } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
-import { Building2, Factory, ShoppingBag, GraduationCap, Heart, Briefcase } from "lucide-react"
+import { Building2, Factory, ShoppingBag, GraduationCap, Heart, Briefcase, Rocket, DollarSign, Phone } from "lucide-react"
 import Link from "next/link"
+
+const whatMakesUsSpecial = [
+  {
+    icon: Rocket,
+    title: "Listo para el Futuro" ,
+    desc: "Última tecnología del mercado" ,
+  },
+  {
+    icon: DollarSign,
+    title: "Sin Sorpresas" ,
+    desc: "Precios fijos, tiempos claros" ,
+  },
+  {
+    icon: Phone,
+    title: "A Una Llamada" ,
+    desc: "Soporte cuando lo necesites",
+  },
+]
 
 const clients = [
   {
@@ -64,7 +82,7 @@ export function ClientsSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-secondary/50 px-4 py-2 rounded-full mb-6">
             <div className="w-2 h-2 bg-primary rounded-full"></div>
-            <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Trusted Partners</span>
+            <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Socios de confianza</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
             Clientes Que Confían en Nuestros Expertos
@@ -90,7 +108,7 @@ export function ClientsSection() {
         </div>
 
         {/* Client Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pb-16">
           {clients.map((client, index) => {
             const IconComponent = client.icon
             return (
@@ -133,6 +151,81 @@ export function ClientsSection() {
               </Card>
             )
           })}
+        </div>
+
+        <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 rounded-3xl p-8 lg:p-12 text-white overflow-hidden">
+          {/* Futuristic background elements */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
+            <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-1/4 left-1/4 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          </div>
+
+          {/* Grid pattern overlay */}
+          <div
+            className="absolute inset-0 opacity-5"
+            style={{
+              backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+              backgroundSize: "20px 20px",
+            }}
+          ></div>
+
+          <div className="relative z-10 cursor-context-menu">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-white/10 px-6 py-3 rounded-full text-sm font-medium mb-6">
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-ping delay-75"></div>
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-ping delay-150"></div>
+                <span className="text-blue-200">
+                  VENTAJAS DE ELEGIRNOS
+                </span>
+              </div>
+              <h3 className="text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+                ¿Por Qué Nos Eligen?
+              </h3>
+              <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+                  Tres protocolos centrales que definen nuestra excelencia operacional
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {whatMakesUsSpecial.map((item, index) => {
+              const IconComponent = item.icon
+              return (<div key={index} className="group relative">
+                  {/* Futuristic card with glowing border */}
+                  <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-400/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-blue-500/20">
+                    {/* Animated corner accents */}
+                    <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-blue-400/50 rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-blue-400/50 rounded-br-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                    {/* Futuristic icon */}
+                    <div className="relative mb-6">
+                      <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center mx-auto border border-white/10 group-hover:border-blue-400/50 transition-all duration-300">
+                        <IconComponent className="group-hover:scale-110 transition-all duration-300"/>
+                        {/* <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <div className="w-3 h-3 bg-white rounded-sm animate-pulse"></div>
+                        </div> */}
+                      </div>
+                      {/* Scanning line effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-pulse"></div>
+                    </div>
+
+                    <div className="text-center">
+                      <h4 className="text-xl font-bold mb-3 text-white group-hover:text-blue-100 transition-colors duration-300">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-300 group-hover:text-gray-200 transition-colors duration-300 leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+
+                    {/* Status indicator */}
+                    <div className="absolute top-4 right-4 w-3 h-3 bg-green-400 rounded-full opacity-50 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-300"></div>
+                  </div>
+                </div>
+              )})}
+            </div>
+          </div>
         </div>
 
         {/* CTA */}

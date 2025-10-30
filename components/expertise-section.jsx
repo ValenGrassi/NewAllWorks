@@ -83,15 +83,13 @@ export function ExpertiseSection() {
           })}
         </div>
 
-        <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 rounded-3xl p-8 lg:p-12 text-white overflow-hidden">
-          {/* Futuristic background elements */}
+        {/* <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 rounded-3xl p-8 lg:p-12 text-white overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
             <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-1/4 left-1/4 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
           </div>
 
-          {/* Grid pattern overlay */}
           <div
             className="absolute inset-0 opacity-5"
             style={{
@@ -122,21 +120,15 @@ export function ExpertiseSection() {
               {whatMakesUsSpecial.map((item, index) => {
               const IconComponent = item.icon
               return (<div key={index} className="group relative">
-                  {/* Futuristic card with glowing border */}
                   <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-400/50 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-blue-500/20">
-                    {/* Animated corner accents */}
                     <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-blue-400/50 rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-blue-400/50 rounded-br-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                    {/* Futuristic icon */}
                     <div className="relative mb-6">
                       <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center mx-auto border border-white/10 group-hover:border-blue-400/50 transition-all duration-300">
                         <IconComponent className="group-hover:scale-110 transition-all duration-300"/>
-                        {/* <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                          <div className="w-3 h-3 bg-white rounded-sm animate-pulse"></div>
-                        </div> */}
+                       
                       </div>
-                      {/* Scanning line effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-pulse"></div>
                     </div>
 
@@ -149,12 +141,19 @@ export function ExpertiseSection() {
                       </p>
                     </div>
 
-                    {/* Status indicator */}
                     <div className="absolute top-4 right-4 w-3 h-3 bg-green-400 rounded-full opacity-50 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-300"></div>
                   </div>
                 </div>
               )})}
             </div>
+          </div>
+        </div> */}
+        <div className="text-center mt-16">
+          <p className="text-lg text-muted-foreground mb-6">¿Querés saber más sobre nosotros?</p>
+          <div className="inline-flex items-center gap-4">
+            <div className="w-12 h-px bg-border"></div>
+            <Link href="/nosotros" className="text-sm text-muted-foreground uppercase tracking-wider hover:scale-110 transition-all">Nuestra Historia</Link>
+            <div className="w-12 h-px bg-border"></div>
           </div>
         </div>
       </div>

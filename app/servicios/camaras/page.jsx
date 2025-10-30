@@ -91,7 +91,7 @@ export default function CameraInstallationPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Nuestros Servicios</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Más de 40 años ofreciendo instalaciones y mantenimiento a empresas de cualquier escala
+            Más de 40 años ofreciendo instalaciones y mantenimiento a empresas de diferentes escalas
             </p>
           </div>
 
@@ -252,7 +252,7 @@ export default function CameraInstallationPage() {
         </div>
       </section> */}
 
-      <section className="py-16 bg-muted/50 border-t-2 border-muted">
+      <section className="py-16 border-y-2 border-muted">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Producto Destacado</h2>
@@ -332,14 +332,14 @@ export default function CameraInstallationPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">¿Por qué elegir nuestro servicio de cámaras?</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">¿Por Qué Elegir Nuestros Servicios?</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Badge variant="secondary" className="mt-1">
                     ✓
                   </Badge>
                   <div>
-                    <h3 className="font-semibold text-foreground">Técnicos Certificados</h3>
+                    <h3 className="font-semibold text-foreground">Técnicos Especializados</h3>
                     <p className="text-muted-foreground text-md">
                     Profesionales con amplia experiencia y <b>prolijidad</b>
                     </p>

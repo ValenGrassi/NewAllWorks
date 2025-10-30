@@ -1,3 +1,5 @@
+"use client"
+
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -9,8 +11,103 @@ import rackMansur from "../../../public/rackMansur.jpeg"
 import rack2 from "../../../public/rack2.jpeg"
 import rack3 from "../../../public/rack3.jpeg"
 import Image from "next/image"
+import rack4 from "../../../public/rack4.jpeg"
+import { useState } from "react"
 
 export default function NetworkInstallationPage() {
+  function RacksToggle({ extraPoints, sectionId }) {
+    const [open, setOpen] = useState(false)
+  
+    return (
+      <div>
+        <button
+          aria-expanded={open}
+          aria-controls={`${sectionId}-extras`}
+          onClick={() => setOpen((v) => !v)}
+          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline cursor-pointer"
+        >
+          {open ? "Ver menos" : "Ver más"}
+          <svg
+            className={`w-4 h-4 transition-transform duration-200 ${open ? "rotate-90" : ""}`}
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M6 6 L14 10 L6 14 z" />
+          </svg>
+        </button>
+  
+        <div
+          id={`${sectionId}-extras`}
+          className={`mt-4 text-sm text-muted-foreground overflow-hidden transition-all ${open ? "max-h-96" : "max-h-0"}`}
+          style={{ transitionProperty: "max-height, opacity", transitionDuration: "300ms" }}
+          aria-hidden={!open}
+        >
+          <ul className="space-y-2">
+            {extraPoints.map((p, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <CheckCircle className="w-4 h-4 text-primary mt-1" />
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )
+  }
+
+  const cards = [
+    {
+      id: "oficinas",
+      title: "Redes para Oficinas",
+      img: rackMansur,
+      keyPoints: [
+        "Redes 5–50 usuarios",
+        "Servidor para networking",
+        "Access points WiFi",
+      ],
+      extraPoints: [
+        "Equipos de cámaras",
+        "Monitor para uso rápido",
+        "Etiquetado y documentación",
+      ],
+      icon: Zap,
+    },
+    {
+      id: "pymes",
+      title: "Redes para Pymes",
+      img: rack3,
+      keyPoints: [
+        "Redes 50–100 usuarios",
+        "Cobertura WiFi ampliada",
+        "Canalizaciones ordenadas",
+      ],
+      extraPoints: [
+        "UPS y estabilización",
+        "Patch panels y organizers",
+        "Identificación de puertos",
+      ],
+      icon: Zap,
+    },
+    {
+      id: "multinacionales",
+      title: "Redes para Multinacionales",
+      img: rack4,
+      keyPoints: [
+        "Escalable +100 usuarios",
+        "Instalación servidores",
+        "Capas de seguridad",
+      ],
+      extraPoints: [
+        "Equipos Cisco (firewall/switch/router)",
+        "Monitoreo 24/7",
+        "Mantenimiento UPS y baterías",
+      ],
+      icon: Network,
+    },
+  ]
+
+
   return (
     <main className="min-h-screen">
       <Header />
@@ -91,15 +188,15 @@ export default function NetworkInstallationPage() {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">WiFi 6/6E technology</span>
+                    <span className="text-sm">Planificación de cobertura WiFi</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Mesh network design</span>
+                    <span className="text-sm">Diseño estratégico de Access Points</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Guest network isolation</span>
+                    <span className="text-sm">Red de invitados aislada y segura</span>
                   </li>
                 </ul>
               </CardContent>
@@ -133,137 +230,70 @@ export default function NetworkInstallationPage() {
       </section>
 
       {/* Network Types */}
-      <section className="py-16 bg-muted/50" id="racks">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Nuestros Racks</h2>
-            <p className="text-lg text-muted-foreground">Diseñamos y organizamos racks profesionales siguiendo estándares internacionales (TIA/EIA).</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-          <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Zap className="w-6 h-6 text-primary" />
-                  Redes para Oficinas
-                </CardTitle>
-              </CardHeader>
-              <div className="m-2 rounded-2xl"><Image src={rackMansur} className="rounded-sm"/></div>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Redes de 5-50 usuarios</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Servidor para networking</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Access points WiFi</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Equipos de cámaras</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Monitor para uso veloz</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Zap className="w-6 h-6 text-primary" />
-                  Redes para Pymes
-                </CardTitle>
-              </CardHeader>
-              <div className="m-2 rounded-2xl"><Image src={rack2} className="rounded-sm"/></div>
-              <CardContent>
-              <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Redes de 50-100 usuarios</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Servidor para networking</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Cobertura WiFi ampliada</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Equipos de cámaras</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Identificación y etiquetado de puertos</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Canalizaciones ordenadas (bandejas, patcheras, organizers)</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>UPS estabilizador de tensión</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Network className="w-6 h-6 text-primary" />
-                  Redes para Multinacionales
-                </CardTitle>
-              </CardHeader>
-              <div className="m-2 rounded-2xl"><Image src={rack3} className="rounded-sm"/></div>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Redes de +100 usuarios escalable</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Instalación y mantenimiento servidores HP ProLiant</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Capas de seguridad avanzadas</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Equipación última generación <b>Cisco</b> (firewall, router, switch)</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Identificación y etiquetado de puertos.</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Canalizaciones ordenadas (bandejas, patcheras, organizers)</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Instalación de UPS y cambios de baterías</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Sistema monitoreo 24/7 con app <a href="/servicios/desarrollo" className="underline cursor-pointer text-blue-500">acá</a></span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
+      <section className="py-16 bg-muted/50 border-t-2 border-muted" id="racks">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-foreground mb-4">Nuestros Racks</h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Diseñamos y organizamos racks profesionales siguiendo estándares (TIA/EIA). Todo instalado y documentado.
+          </p>
         </div>
-      </section>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {cards.map((card) => (
+            <article
+              key={card.id}
+              className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-transform hover:-translate-y-2"
+              aria-labelledby={`${card.id}-title`}
+            >
+              {/* Imagen vertical: uso aspect ratio 9:16. Si prefieres 4:5, sustituir aspect-[9/16] por aspect-[4/5] */}
+              <div className="w-full bg-muted">
+                <div className="aspect-[4/5] sm:aspect-[4/5] overflow-hidden">
+                  <Image
+                    src={card.img}
+                    alt={`${card.title} - All Works`}
+                    className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
+                    priority={false}
+                  />
+                </div>
+              </div>
+
+              <div className="p-6">
+                <header className="mb-3">
+                  <h3 id={`${card.id}-title`} className="text-xl font-semibold text-foreground flex items-center gap-3">
+                    <card.icon className="w-5 h-5 text-primary" />
+                    {card.title}
+                  </h3>
+
+                  {/* badges muy sutiles — resumen rápido */}
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {card.keyPoints.slice(0, 3).map((kp, i) => (
+                      <span key={i} className="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">
+                        {kp}
+                      </span>
+                    ))}
+                  </div>
+                </header>
+
+                {/* puntos visibles (3 aprox.) */}
+                <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                  {card.keyPoints.map((p, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <CheckCircle className="w-4 h-4 text-primary mt-1" />
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Toggle: muestra el bloque extra solo cuando se expande */}
+                <RacksToggle extraPoints={card.extraPoints} sectionId={card.id} />
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
 
       {/* Process Section */}
       <section className="py-16">
@@ -313,7 +343,7 @@ export default function NetworkInstallationPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">¿Por qué elegir nuestros servicios de redes?</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">¿Por Qué Elegir Nuestros Servicios?</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Badge variant="secondary" className="mt-1">

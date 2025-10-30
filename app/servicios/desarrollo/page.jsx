@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Code, Globe, Database, Smartphone, CheckCircle, Phone, Rocket } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import Panel from "../../../public/camaraPanel.webp"
+import Sar from "../../../public/sar.png"
 
 
 export default function DevelopmentServicesPage() {
@@ -24,20 +24,19 @@ export default function DevelopmentServicesPage() {
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-              Custom Software Development
+              Desarrollo de Software Personalizado
             </h1>
             <p className="text-xl text-muted-foreground mb-8 text-pretty">
-              Transform your business with custom web applications, mobile apps, and full-stack systems. Our development
-              team delivers scalable solutions tailored to your needs.
+              Transformá tu empresa con páginas web, aplicaciones móvil y sistemas complejos con bases de datos. Nuestro equipo de desarrollo te entrega soluciones escalables hechas a medida para tus necesidades. 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8">
                 <Rocket className="w-5 h-5 mr-2" />
-                Start Your Project
+                Empezá Tu Proyecto
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
                 <Phone className="w-5 h-5 mr-2" />
-                Discuss Ideas
+                Discutir Ideas
               </Button>
             </div>
           </div>
@@ -48,9 +47,9 @@ export default function DevelopmentServicesPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Development Services</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Nuestros Servicios</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Full-stack development solutions from concept to deployment
+              Desarrollo full-stack desde la idea al despliegue
             </p>
           </div>
 
@@ -59,21 +58,22 @@ export default function DevelopmentServicesPage() {
               <CardHeader>
                 <Globe className="w-12 h-12 text-primary mb-4" />
                 <CardTitle>Aplicaciones Web</CardTitle>
-                <CardDescription>Modern, responsive web applications built with latest technologies</CardDescription>
+                <CardDescription>Páginas web modernas creadas con las últimas tecnologías
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">React/Next.js frontend</span>
+                    <span className="text-sm">Diseño enfocado en UX/UI</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Responsive design</span>
+                    <span className="text-sm">Diseño Responsivo (para todos los dispositivos)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">SEO optimization</span>
+                    <span className="text-sm">Optimizado para SEO</span>
                   </li>
                 </ul>
               </CardContent>
@@ -83,21 +83,23 @@ export default function DevelopmentServicesPage() {
               <CardHeader>
                 <Database className="w-12 h-12 text-primary mb-4" />
                 <CardTitle>Sistemas Full-Stack</CardTitle>
-                <CardDescription>Complete backend systems with databases and APIs</CardDescription>
+                <CardDescription>
+                  Sistemas backend completos con bases de datos y APIs
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">RESTful APIs</span>
+                    <span className="text-sm">Relación entre frontend y backend</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Database design</span>
+                    <span className="text-sm">Diseño de base de datos <b>optimizada</b></span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Cloud deployment</span>
+                    <span className="text-sm">Despliego del sistema completo</span>
                   </li>
                 </ul>
               </CardContent>
@@ -107,13 +109,15 @@ export default function DevelopmentServicesPage() {
               <CardHeader>
                 <Smartphone className="w-12 h-12 text-primary mb-4" />
                 <CardTitle>Aplicaciones Móvil</CardTitle>
-                <CardDescription>Native and cross-platform mobile app development</CardDescription>
+                <CardDescription>
+                  Aplicaciones móvil nativas y multi-plataformas
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">iOS & Android</span>
+                    <span className="text-sm">iOS y Android</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
@@ -121,7 +125,7 @@ export default function DevelopmentServicesPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">App store deployment</span>
+                    <span className="text-sm">Despliego en App Store y Google Play</span>
                   </li>
                 </ul>
               </CardContent>
@@ -134,8 +138,9 @@ export default function DevelopmentServicesPage() {
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Our Technology Stack</h2>
-            <p className="text-lg text-muted-foreground">Modern technologies for scalable, maintainable solutions</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Nuestro Stack Especializado</h2>
+            <p className="text-lg text-muted-foreground">
+            Tecnologías modernas para soluciones escalables y mantenibles</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -148,8 +153,8 @@ export default function DevelopmentServicesPage() {
                   <Badge variant="secondary">React</Badge>
                   <Badge variant="secondary">Next.js</Badge>
                   <Badge variant="secondary">TypeScript</Badge>
+                  <Badge variant="secondary">Astro</Badge>
                   <Badge variant="secondary">Tailwind CSS</Badge>
-                  <Badge variant="secondary">Vue.js</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -161,23 +166,21 @@ export default function DevelopmentServicesPage() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Node.js</Badge>
-                  <Badge variant="secondary">Python</Badge>
+                  <Badge variant="secondary">Prisma</Badge>
                   <Badge variant="secondary">Express</Badge>
-                  <Badge variant="secondary">FastAPI</Badge>
-                  <Badge variant="secondary">GraphQL</Badge>
+                  <Badge variant="secondary">Mongoose</Badge>
                 </div>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Database</CardTitle>
+                <CardTitle className="text-lg">Bases de Datos</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">PostgreSQL</Badge>
                   <Badge variant="secondary">MongoDB</Badge>
-                  <Badge variant="secondary">Redis</Badge>
                   <Badge variant="secondary">Supabase</Badge>
                   <Badge variant="secondary">Firebase</Badge>
                 </div>
@@ -186,14 +189,14 @@ export default function DevelopmentServicesPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Cloud & DevOps</CardTitle>
+                <CardTitle className="text-lg">Cloud y DevOps</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Vercel</Badge>
                   <Badge variant="secondary">AWS</Badge>
                   <Badge variant="secondary">Docker</Badge>
-                  <Badge variant="secondary">GitHub Actions</Badge>
+                  <Badge variant="secondary">GitHub</Badge>
                   <Badge variant="secondary">Kubernetes</Badge>
                 </div>
               </CardContent>
@@ -216,9 +219,9 @@ export default function DevelopmentServicesPage() {
                 <div className="md:w-1/2">
                   <div className="h-72 md:h-[480px] relative bg-muted overflow-hidden">
                     <Image
-                      src={Panel}
+                      src={Sar}
                       alt="Starlink Enterprise - terminal satelital empresarial"
-                      className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
+                      className="w-full h-full transform transition-transform duration-500 hover:scale-105"
                       priority={false}
                     />
                   </div>
@@ -230,25 +233,25 @@ export default function DevelopmentServicesPage() {
                     <span className="inline-block text-xs font-semibold text-red-600 mb-3 underline underline-offset-3">Nuevo</span>
 
                     <h3 className="text-2xl font-semibold text-foreground mb-3">
-                      Cámara Wifi Imou 5mpx
+                      MVP Sistema de Autogestión de Racks
                     </h3>
 
                     <p className="text-sm text-muted-foreground mb-4">
-                    Durabilidad, conectividad, detección. AOV lo hace todo.
+                    Cálculos de consumo, cambios de baterías de UPS, detección de errores, con SAR gestionas todos los detalles de tu rack.
                     </p>
 
                     <ul className="text-sm text-muted-foreground space-y-2 mb-6">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-primary mt-1" />
-                        <span className="font-medium text-foreground">¡No necesita que le lleves tensión!</span>
+                        <span className="font-medium text-foreground">¡Todo editable desde la página!</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-primary mt-1" />
-                        <span>Grabación 24/7 · Detección por IA · Imagen 3K UHD</span>
+                        <span>Customizable a tus necesidades</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-primary mt-1" />
-                        <span>Instalación y soporte profesional</span>
+                        <span>Despliego y soporte profesional</span>
                       </li>
                     </ul>
                   </div>
@@ -256,12 +259,12 @@ export default function DevelopmentServicesPage() {
                   {/* CTA alineado a la derecha */}
                   <div className="flex items-center justify-start mt-4">
                     <Link
-                      href="https://www.imou.com/la/product/detail/aov-pt-5mp"
+                      href="https://cinemark-it.netlify.app/"
                       target="_blank"
                       className="inline-flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 rounded"
                       aria-label="Ver detalles Starlink Enterprise"
                     >
-                      <span className="text-sm font-medium text-primary group-hover:underline transition duration-200">Ver detalles</span>
+                      <span className="text-sm font-medium text-primary group-hover:underline transition duration-200">Ir a la prueba piloto</span>
                       <span
                         className="inline-block ml-2 transition-transform duration-200 transform group-hover:translate-x-2"
                         aria-hidden="true"
@@ -281,118 +284,76 @@ export default function DevelopmentServicesPage() {
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Types of Projects We Build</h2>
-            <p className="text-lg text-muted-foreground">Custom solutions for various business needs</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Proyectos Concretos que Creamos</h2>
+            <p className="text-lg text-muted-foreground">Soluciones reales para necesidades reales: comercio, gestión y datos para empresas.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>E-commerce Platforms</CardTitle>
-                <CardDescription>Online stores with payment processing and inventory management</CardDescription>
+                <CardTitle>Plataformas E-commerce</CardTitle>
+                <CardDescription>Diseñamos tiendas optimizadas para conversión (checkout rápido, SEO técnico y rendimiento) y las integramos con sistemas de reservas cuando el negocio necesita agenda o turnos.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li>• Shopping cart functionality</li>
-                  <li>• Payment gateway integration</li>
-                  <li>• Inventory management</li>
-                  <li>• Order tracking system</li>
+                  <li>• Carrito de compras y pasarelas de pago seguras</li>
+                  <li>• Integración con sistemas de reservas o turnos</li>
+                  <li>• Gestión de inventario y seguimiento de pedidos</li>
+                  <li>• Diseño adaptable a dispositivos móviles</li>
+                  <li>• Análisis de ventas e informes automáticos</li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Business Management</CardTitle>
-                <CardDescription>CRM, ERP, and workflow management systems</CardDescription>
+                <CardTitle>Gestión Empresarial</CardTitle>
+                <CardDescription>Desarrollamos sistemas que centralizan la gestión del negocio (proyectos, inventarios y reportes) con automatización y análisis en tiempo real para mejorar la eficiencia y la toma de decisiones.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li>• Customer relationship management</li>
-                  <li>• Project management tools</li>
-                  <li>• Reporting dashboards</li>
-                  <li>• Workflow automation</li>
+                  <li>• CRM para clientes y seguimiento comercial</li>
+                  <li>• Gestión de tareas, proyectos y recursos</li>
+                  <li>• Control de stock, facturación y presupuestos</li>
+                  <li>• Automatización de flujos internos</li>
+                  <li>• Dashboards con indicadores clave del negocio</li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Data Analytics</CardTitle>
-                <CardDescription>Business intelligence and data visualization platforms</CardDescription>
+                <CardTitle>Análisis de Datos</CardTitle>
+                <CardDescription>Creamos paneles de datos y reportes automáticos que transforman información en decisiones, con visualizaciones claras, integración de APIs y métricas personalizadas.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li>• Real-time dashboards</li>
-                  <li>• Data visualization</li>
-                  <li>• Automated reporting</li>
-                  <li>• API integrations</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Booking Systems</CardTitle>
-                <CardDescription>Appointment scheduling and reservation platforms</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Calendar integration</li>
-                  <li>• Payment processing</li>
-                  <li>• Automated notifications</li>
-                  <li>• Resource management</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Learning Platforms</CardTitle>
-                <CardDescription>Educational and training management systems</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Course management</li>
-                  <li>• Progress tracking</li>
-                  <li>• Video streaming</li>
-                  <li>• Assessment tools</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Communication Tools</CardTitle>
-                <CardDescription>Chat applications and collaboration platforms</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Real-time messaging</li>
-                  <li>• File sharing</li>
-                  <li>• Video conferencing</li>
-                  <li>• Team collaboration</li>
+                  <li>• Paneles en tiempo real y visualizaciones claras</li>
+                  <li>• Integración de APIs y fuentes externas</li>
+                  <li>• Reportes automáticos y personalizados</li>
+                  <li>• Análisis predictivo para decisiones estratégicas</li>
+                  <li>• Herramientas de inteligencia de negocios (BI)</li>
                 </ul>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
-
+      
       {/* Contact Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">Why Choose Our Development Team?</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">¿Por Qué Elegir Nuestros Servicios?</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Badge variant="secondary" className="mt-1">
                     ✓
                   </Badge>
                   <div>
-                    <h3 className="font-semibold text-foreground">Experienced Developers</h3>
-                    <p className="text-muted-foreground text-sm">Senior developers with 5+ years experience</p>
+                    <h3 className="font-semibold text-foreground">Programadores con Experiencia</h3>
+                    <p className="text-muted-foreground text-sm">Todos nuestros desarrolladores cuentan con +4 años de experiencia</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -400,8 +361,8 @@ export default function DevelopmentServicesPage() {
                     ✓
                   </Badge>
                   <div>
-                    <h3 className="font-semibold text-foreground">Modern Technologies</h3>
-                    <p className="text-muted-foreground text-sm">Latest frameworks and best practices</p>
+                    <h3 className="font-semibold text-foreground">Tecnologías Modernas</h3>
+                    <p className="text-muted-foreground text-sm">Buenas prácticas utilizando los últimos frameworks</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -409,8 +370,8 @@ export default function DevelopmentServicesPage() {
                     ✓
                   </Badge>
                   <div>
-                    <h3 className="font-semibold text-foreground">Agile Methodology</h3>
-                    <p className="text-muted-foreground text-sm">Regular updates and transparent communication</p>
+                    <h3 className="font-semibold text-foreground">Metodología Ágil</h3>
+                    <p className="text-muted-foreground text-sm">Tiempos fijos y presupuestos claros</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -418,8 +379,8 @@ export default function DevelopmentServicesPage() {
                     ✓
                   </Badge>
                   <div>
-                    <h3 className="font-semibold text-foreground">Ongoing Support</h3>
-                    <p className="text-muted-foreground text-sm">Maintenance and feature updates</p>
+                    <h3 className="font-semibold text-foreground">Soporte y Mantenimiento</h3>
+                    <p className="text-muted-foreground text-sm">Mantenimiento, actualizaciones y solución de bugs.</p>
                   </div>
                 </div>
               </div>
