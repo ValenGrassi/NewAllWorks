@@ -5,7 +5,7 @@ import React, { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button" // si estás usando tu Button
-import DropdownTippy from "./ui/DropdownTippy"
+import DropdownTippy from "./ui/dropdownTippy"
 import { Menu, Phone, Mail, ChevronDown, X, Linkedin } from "lucide-react"
 import Logo from "../public/prueba.png"
 
