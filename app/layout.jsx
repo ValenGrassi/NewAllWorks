@@ -4,16 +4,15 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'All Works - Soluciones Informáticas y Seguridad',
+  description: 'All Works es un proveedor líder de servicios informáticos y tecnologías de vanguardia. Contactanos para obtener más información sobre cómo podemos ayudarte.',
 }
 
 export default function RootLayout({
   children,
 }) {
   return (
-    <html lang="en" className='scroll-smooth'>
+    <html lang="es" className='scroll-smooth'>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
         <Analytics />

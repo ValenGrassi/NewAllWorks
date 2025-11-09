@@ -82,7 +82,7 @@ export function ContactSection() {
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground mb-1 text-2xl">Dirección</p>
+                    <p className="font-semibold text-foreground mb-1 text-2xl">Oficinas</p>
                     <p className="text-muted-foreground">Chubut 1475</p>
                     <p className="text-muted-foreground">Buenos Aires, Pilar</p>
                   </div>

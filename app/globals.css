@@ -180,4 +180,22 @@
     background: oklch(0.08 0 0 / 0.8);
     border: 1px solid oklch(0.2 0 0 / 0.3);
   }
+  /* --- Custom Tippy theme: light-dropdown --- */
+.tippy-box[data-theme~='light-dropdown'] {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important; 
+  color: white;
+}
+
+.tippy-box[data-theme~='light-dropdown'] > .tippy-content {
+  padding: 0;
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.tippy-box[data-theme~='light-dropdown'] > .tippy-arrow {
+display: none;}
+
 }

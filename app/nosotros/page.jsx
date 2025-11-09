@@ -13,7 +13,7 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-muted py-20">
+      <section className="bg-gradient-to-br from-background to-muted py-20" id="historia">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
@@ -65,7 +65,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-muted/30" id="valores">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Nuestros Valores</h2>
@@ -140,7 +140,7 @@ export default function AboutPage() {
         </div>
       </section> */}
 
-      <section className="py-16">
+      <section className="py-16" id="mision">
   <div className="container mx-auto px-4">
     <div className="max-w-4xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-center mb-16">

@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
-import { Building2, Factory, ShoppingBag, GraduationCap, Heart, Briefcase, Rocket, DollarSign, Phone } from "lucide-react"
+import { Building2, Factory, ShoppingBag, GraduationCap, Heart, Briefcase, Rocket, DollarSign, Phone, Film, Popcorn, Clapperboard } from "lucide-react"
 import Link from "next/link"
 
 const whatMakesUsSpecial = [
@@ -27,7 +27,7 @@ const clients = [
   {
     name: "Cinemark Hoyts",
     industry: "Cines",
-    icon: Factory,
+    icon: Popcorn,
     services: ["Instalación de redes y eléctricas", "Organización de racks", "Arreglo y cambio de baterías de UPS", "Instalación, configuración y orientación de antenas satelitales"],
     testimonial: "Outstanding service and technical expertise. Our production line monitoring is now seamless.",
     logo: "/cinemark-hoyts-cuadrado.png",
@@ -35,7 +35,7 @@ const clients = [
   {
     name: "Cinepolis",
     industry: "Cines",
-    icon: Heart,
+    icon: Film,
     services: ["Satellite Communications", "CCTV Network", "Solar Power"],
     testimonial: "Reliable 24/7 connectivity for our critical healthcare operations.",
     logo: "/cinepolis.png",
@@ -43,7 +43,7 @@ const clients = [
   {
     name: "Cinecolor",
     industry: "Distribudor de peliculas",
-    icon: ShoppingBag,
+    icon: Clapperboard,
     services: ["Camera Systems", "Network Installation", "Custom Software"],
     testimonial: "Comprehensive security solution across all our retail locations.",
     logo: "/Cinecolor Final.jpg",
@@ -51,7 +51,7 @@ const clients = [
   {
     name: "DZE - Espel",
     industry: "Fábrica Automotriz",
-    icon: GraduationCap,
+    icon: Factory,
     services: ["Campus Network", "Solar Installation", "Development Services"],
     testimonial: "Modern infrastructure supporting our digital transformation initiatives.",
     logo: "/DZE Final.jpg",
@@ -76,7 +76,7 @@ const clients = [
 
 export function ClientsSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-muted/30">
+    <section id="clientes" className="py-24 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -139,14 +139,18 @@ export function ClientsSection() {
 
                   {/* Services */}
                   <div className="mb-6 cursor-context-menu">
-                    <div className="flex flex-wrap gap-2">
-                      {client.services.map((service, serviceIndex) => (
-                        <Badge key={serviceIndex} variant="outline" className="text-xs">
-                          {service}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+  <div className="flex flex-col md:flex-row md:flex-wrap items-start gap-2 overflow-hidden min-w-0">
+    {client.services.map((service, serviceIndex) => (
+      <Badge
+        key={serviceIndex}
+        variant="outline"
+        className="text-xs w-fit max-w-full whitespace-normal break-words"
+      >
+        {service}
+      </Badge>
+    ))}
+  </div>
+</div>
                 </CardContent>
               </Card>
             )
@@ -230,10 +234,10 @@ export function ClientsSection() {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <p className="text-lg text-muted-foreground mb-6">¿Estás preparado para dar el siguiente paso con tu empresa?</p>
+          <p className="text-lg text-muted-foreground mb-6">¿Querés ver cómo ayudamos a las empresas que nos contratan?</p>
           <div className="inline-flex items-center gap-4">
             <div className="w-12 h-px bg-border"></div>
-            <Link href="/#contacto" className="text-sm text-muted-foreground uppercase tracking-wider hover:scale-110 transition-all">Empezá hoy</Link>
+            <Link href="https://www.linkedin.com/company/all-works-ingenieria" target="_blank" className="text-sm text-muted-foreground uppercase tracking-wider hover:scale-110 transition-all">Mirá nuestro linkedin</Link>
             <div className="w-12 h-px bg-border"></div>
           </div>
         </div>

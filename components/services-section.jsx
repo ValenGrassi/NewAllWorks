@@ -4,18 +4,6 @@ import { Camera, Satellite, Network, Server, Sun, Code, Globe, Database, Cctv, S
 
 const hardwareServices = [
   {
-    link: "servicios/camaras",
-    icon: Cctv,
-    title: "Instalación de Cámaras de Seguridad",
-    description: "Sistemas CCTV profesionales con monitoreo remoto para cobertura completa de seguridad.",
-  },
-  {
-    link: "servicios/sat",
-    icon: SatelliteDish,
-    title: "Instalación y Orientación de Antenas Satelitales",
-    description: "Sistemas de comunicación satelital de alto rendimiento para conectividad confiable en cualquier lugar.",
-  },
-  {
     link: "servicios/redes",
     icon: Network,
     title: "Infraestructura de Redes",
@@ -28,10 +16,16 @@ const hardwareServices = [
     description: "Instalación profesional de racks con gestión de energía, refrigeración y organización adecuada.",
   },
   {
-    link: "servicios/paneles",
-    icon: Sun,
-    title: "Sistemas de Paneles Solares",
-    description: "Sustainable energy solutions with professional installation and monitoring systems.",
+    link: "servicios/camaras",
+    icon: Cctv,
+    title: "Instalación de Cámaras de Seguridad",
+    description: "Sistemas CCTV profesionales con monitoreo remoto para cobertura completa de seguridad.",
+  },
+  {
+    link: "servicios/sat",
+    icon: SatelliteDish,
+    title: "Instalación y Orientación de Antenas Satelitales",
+    description: "Sistemas de comunicación satelital de alto rendimiento para conectividad confiable en cualquier lugar.",
   },
 ]
 
@@ -58,7 +52,7 @@ const softwareServices = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-20 bg-muted/30">
+    <section id="services" className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Nuestros Servicios</h2>

@@ -70,7 +70,7 @@ export function ExpertiseSection() {
                   <Link href={item.link}>
                     <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-3 border border-gray-100">
                       <div className={`h-48 rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center mb-6 hover:scale-110 transition-transform duration-300`}>
-                        <Image src={item.icon} className="text-white p-8" />
+                        <Image alt={"logo" + index} src={item.icon} className="text-white p-8" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-700 transition-colors">
                         {item.title}

@@ -61,6 +61,7 @@ export default function NetworkInstallationPage() {
       id: "oficinas",
       title: "Redes para Oficinas",
       img: rackMansur,
+      badge: "Redes 5–50 usuarios",
       keyPoints: [
         "Redes 5–50 usuarios",
         "Servidor para networking",
@@ -77,6 +78,7 @@ export default function NetworkInstallationPage() {
       id: "pymes",
       title: "Redes para Pymes",
       img: rack3,
+      badge: "Redes 50-100 usuarios",
       keyPoints: [
         "Redes 50–100 usuarios",
         "Cobertura WiFi ampliada",
@@ -93,6 +95,7 @@ export default function NetworkInstallationPage() {
       id: "multinacionales",
       title: "Redes para Multinacionales",
       img: rack4,
+      badge: "Redes +100 usuarios escalable",
       keyPoints: [
         "Escalable +100 usuarios",
         "Instalación servidores",
@@ -267,11 +270,11 @@ export default function NetworkInstallationPage() {
 
                   {/* badges muy sutiles — resumen rápido */}
                   <div className="flex flex-wrap gap-2 mt-3">
-                    {card.keyPoints.slice(0, 3).map((kp, i) => (
-                      <span key={i} className="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">
-                        {kp}
+                    {
+                      <span className="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">
+                        {card.badge}
                       </span>
-                    ))}
+                    }
                   </div>
                 </header>
 

@@ -4,7 +4,7 @@ import { ArrowRight, Shield, Zap, Users } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-primary/5 to-accent/5 py-20 lg:py-32">
+<section className="relative bg-gradient-to-br from-primary/5 to-accent/5 py-20 md:py-0 md:min-h-screen flex items-center justify-center md:-translate-y-5">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
