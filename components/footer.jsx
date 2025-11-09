@@ -29,6 +29,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/servicios/redes#racks" className="hover:text-primary transition-colors">
+                  Racks de Servidores
+                </a>
+              </li>
+              <li>
                 <a href="/servicios/camaras" className="hover:text-primary transition-colors">
                   Cámaras de Seguridad
                 </a>
@@ -36,11 +41,6 @@ export function Footer() {
               <li>
                 <a href="/servicios/sat" className="hover:text-primary transition-colors">
                   Antenas Satelitales
-                </a>
-              </li>
-              <li>
-                <a href="/servicios/redes#racks" className="hover:text-primary transition-colors">
-                  Racks de Servidores
                 </a>
               </li>
               <li>

@@ -39,12 +39,12 @@ export default function SatelliteAntennasPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8">
-                <Signal className="w-5 h-5 mr-2" />
-                Check Coverage
+                Recibir Asesoramiento
+                <Signal className="w-5 h-5 ml-2" />
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
                 <Phone className="w-5 h-5 mr-2" />
-                Get Quote
+                Llamar a un Experto
               </Button>
             </div>
           </div>
@@ -266,12 +266,14 @@ export default function SatelliteAntennasPage() {
                 {/* IMAGEN — más alta */}
                 <div className="md:w-1/2">
                   <div className="h-72 md:h-[480px] relative bg-muted overflow-hidden">
+                    <Link href="https://www.starlink.com/es-419/support/article/995d9179-23e0-bd81-525e-ecb3a8b9e96c" target="_blank">
                     <Image
                       src={StarlinkEnterprise}
                       alt="Starlink Enterprise - terminal satelital empresarial"
                       className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
                       priority={false}
                     />
+                    </Link>
                   </div>
                 </div>
 

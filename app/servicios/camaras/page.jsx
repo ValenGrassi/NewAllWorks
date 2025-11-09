@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Shield, Eye, Zap, CheckCircle, Phone, Cctv, Wifi, Cable, UserRoundCog } from "lucide-react"
+import { Shield, Eye, Zap, CheckCircle, Phone, Cctv, Wifi, Cable, UserRoundCog, LucideMousePointer } from "lucide-react"
 import Rotofrance from "../../../public/rotofranceCamaras.jpeg"
 import Image from "next/image"
 import Panel from "../../../public/camaraPanel.webp"
@@ -73,12 +73,13 @@ export default function CameraInstallationPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#presupuesto">
                 <Button size="lg" className="text-lg px-8 cursor-pointer">
-                ¡Solicitá tu cotización gratis!
+                Solicitá tu Cotización
+                <LucideMousePointer className="w-5 h-5 ml-2"/>
                 </Button>
               </a>
               <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
                 <Phone className="w-5 h-5 mr-2" />
-                Llamar ahora
+                Llamar a un Experto
               </Button>
             </div>
           </div>
@@ -264,12 +265,14 @@ export default function CameraInstallationPage() {
                 {/* IMAGEN — más alta */}
                 <div className="md:w-1/2">
                   <div className="h-72 md:h-[480px] relative bg-muted overflow-hidden">
-                    <Image
-                      src={Panel}
-                      alt="Starlink Enterprise - terminal satelital empresarial"
-                      className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
-                      priority={false}
-                    />
+                    <Link target="_blank" href="https://www.imou.com/la/product/detail/aov-pt-5mp">
+                      <Image
+                        src={Panel}
+                        alt="Starlink Enterprise - terminal satelital empresarial"
+                        className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
+                        priority={false}
+                      />
+                    </Link>
                   </div>
                 </div>
 
@@ -382,24 +385,24 @@ export default function CameraInstallationPage() {
               <h3 className="text-2xl font-bold text-foreground mb-6">Recibir Presupuesto Gratis</h3>
               <form className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Business Name</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Nombre de la Empresa (opcional)</label>
                   <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Contact Person</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Contacto</label>
                   <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Phone Number</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Número de teléfono</label>
                   <input type="tel" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Number of Cameras Needed</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Número de Cámaras Necesitado</label>
                   <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>1-5 cameras</option>
-                    <option>6-15 cameras</option>
-                    <option>16-30 cameras</option>
-                    <option>30+ cameras</option>
+                    <option>1-5 cámaras</option>
+                    <option>6-15 cámaras</option>
+                    <option>16-30 cámaras</option>
+                    <option>30+ cámaras</option>
                   </select>
                 </div>
                 <Button className="w-full">Enviar Solicitud</Button>

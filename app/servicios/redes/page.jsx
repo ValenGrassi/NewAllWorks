@@ -137,7 +137,7 @@ export default function NetworkInstallationPage() {
               </Button></Link>
               <Link href={"/"}><Button size="lg" variant="outline" className="text-lg px-8 bg-transparent cursor-pointer">
                 <Phone className="w-5 h-5 mr-2" />
-                Llamar a un experto
+                Llamar a un Experto
               </Button></Link>
             </div>
           </div>
@@ -389,33 +389,32 @@ export default function NetworkInstallationPage() {
               </div>
             </div>
             <div className="bg-background rounded-lg p-8 border">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Network Assessment Request</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6">Asesoramiento de Redes Informáticas</h3>
               <form className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Company Name</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Nombre de la Empresa</label>
                   <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">IT Contact</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Contacto IT</label>
                   <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Number of Users</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Número de Usuarios</label>
                   <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>1-25 users</option>
-                    <option>26-50 users</option>
-                    <option>51-100 users</option>
-                    <option>100+ users</option>
+                    <option>5-50 usuarios</option>
+                    <option>51-100 usuarios</option>
+                    <option>100+ usuarios</option>
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Current Network Issues</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Contanos tu Necesidad a Resolver</label>
                   <textarea
                     className="w-full px-3 py-2 border border-border rounded-md bg-background"
                     rows={3}
                   ></textarea>
                 </div>
-                <Button className="w-full">Schedule Assessment</Button>
+                <Button className="w-full">Enviar Solicitud</Button>
               </form>
             </div>
           </div>
