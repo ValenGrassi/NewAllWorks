@@ -59,9 +59,9 @@ export default function SatelliteAntennasPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Satellite Communication Services</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Nuestros Servicios</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Professional satellite antenna systems for reliable connectivity
+              Sistemas profesionales de antenas satelitales para una conexión <b>confiable</b> y estable
             </p>
           </div>
 
@@ -168,71 +168,50 @@ export default function SatelliteAntennasPage() {
 
       {/* Technical Specifications */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Technical Capabilities</h2>
-            <p className="text-lg text-muted-foreground">Professional-grade satellite communication equipment</p>
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-foreground mb-4">Nuestras Antenas</h2>
+      <p className="text-lg text-muted-foreground">
+        Antenas instaladas de manera profesional en todo el país.
+      </p>
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[ 
+        { src: Antena, title: "Showcase Vicente López" },
+        { src: Starlink, title: "Starlink Performance" },
+        { src: Antena2, title: "Cinépolis Neuquén" },
+        { src: Starlink2, title: "Starlink Estándar" },
+        { src: Unicenter, title: "Cinépolis Unicenter" },
+        { src: Tortugas, title: "Cinemark Tortugas Open Mall" },
+        { src: Lujan, title: "Cinépolis Luján" },
+        { src: Avellaneda, title: "Starlink Avellaneda" },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="group relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm hover:shadow-lg transition-all duration-300"
+        >
+          <div className="overflow-hidden">
+            <Image
+              src={item.src}
+              alt={item.title}
+              className="h-80 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            <Card>
-              <Image src={Antena} className="aspect-square" />
-              <CardHeader>
-                <CardTitle>Showcase Vicente López</CardTitle>
-              </CardHeader>
-            </Card>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-70 group-hover:opacity-80 transition-opacity duration-500" />
 
-            <Card>
-              <Image src={Starlink} className="aspect-square object-cover" />
-              <CardHeader>
-                <CardTitle>Starlink Performance</CardTitle>
-              </CardHeader>
-            </Card>
-
-            <Card>
-              <Image src={Antena2} className="aspect-square" />
-              <CardHeader>
-                <CardTitle>Cinépolis Neuquén</CardTitle>
-              </CardHeader>
-            </Card>
-
-            <Card>
-              <Image src={Starlink2} className="aspect-square" />
-              <CardHeader>
-                <CardTitle>Starlink Estándar</CardTitle>
-              </CardHeader>
-            </Card>
-
-            <Card>
-              <Image src={Unicenter} className="aspect-square" />
-              <CardHeader>
-                <CardTitle>Cinépolis Unicenter</CardTitle>
-              </CardHeader>
-            </Card>
-
-            <Card>
-              <Image src={Tortugas} className="aspect-square object-cover" />
-              <CardHeader>
-                <CardTitle>Cinemark Tortugas Open Mall</CardTitle>
-              </CardHeader>
-            </Card>
-
-            <Card>
-              <Image src={Lujan} className="aspect-square" />
-              <CardHeader>
-                <CardTitle>Cinépolis Luján</CardTitle>
-              </CardHeader>
-            </Card>
-
-            <Card>
-              <Image src={Avellaneda} className="aspect-square" />
-              <CardHeader>
-                <CardTitle>Starlink Avellaneda</CardTitle>
-              </CardHeader>
-            </Card>
+          <div className="absolute bottom-0 left-0 right-0 p-4">
+            <h3 className="text-white text-lg font-semibold drop-shadow-md">
+              {item.title}
+            </h3>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
       
       {/* <section className="py-16 bg-muted/50 border-t-2 border-muted">
         <div className="container mx-auto px-4">
