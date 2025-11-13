@@ -135,7 +135,7 @@ export default function NetworkInstallationPage() {
                 Recibir Asesoramiento
                 <MousePointer className="w-5 h-5 ml-2"/>
               </Button></Link>
-              <Link href={"/"}><Button size="lg" variant="outline" className="text-lg px-8 bg-transparent cursor-pointer">
+              <Link href={"tel:+541124611212"}><Button size="lg" variant="outline" className="text-lg px-8 bg-transparent cursor-pointer">
                 <Phone className="w-5 h-5 mr-2" />
                 Llamar a un Experto
               </Button></Link>
@@ -392,7 +392,7 @@ export default function NetworkInstallationPage() {
               <h3 className="text-2xl font-bold text-foreground mb-6">Asesoramiento de Redes Informáticas</h3>
               <form className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Nombre de la Empresa</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Nombre de la Empresa (opcional)</label>
                   <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
                 </div>
                 <div>
@@ -400,6 +400,10 @@ export default function NetworkInstallationPage() {
                   <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
                 </div>
                 <div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-1">Número de teléfono</label>
+                  <input type="tel" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
+                </div>
                   <label className="block text-sm font-medium text-foreground mb-1">Número de Usuarios</label>
                   <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
                     <option>5-50 usuarios</option>
@@ -408,8 +412,8 @@ export default function NetworkInstallationPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Contanos tu Necesidad a Resolver</label>
-                  <textarea
+                  <label className="block text-sm font-medium text-foreground mb-1">Descripción del Proyecto</label>
+                  <textarea placeholder="Contanos tu necesidad a resolver..."
                     className="w-full px-3 py-2 border border-border rounded-md bg-background"
                     rows={3}
                   ></textarea>

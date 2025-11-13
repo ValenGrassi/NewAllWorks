@@ -77,10 +77,12 @@ export default function CameraInstallationPage() {
                 <LucideMousePointer className="w-5 h-5 ml-2"/>
                 </Button>
               </a>
-              <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                <Phone className="w-5 h-5 mr-2" />
-                Llamar a un Experto
-              </Button>
+              <Link href="tel:+541124611212">
+                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent cursor-pointer">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Llamar a un Experto
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

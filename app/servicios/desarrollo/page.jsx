@@ -7,6 +7,7 @@ import { Code, Globe, Database, Smartphone, CheckCircle, Phone, Rocket } from "l
 import Link from "next/link"
 import Image from "next/image"
 import Sar from "../../../public/sar.png"
+import Sar2 from "../../../public/SAR3.png"
 
 
 export default function DevelopmentServicesPage() {
@@ -30,14 +31,18 @@ export default function DevelopmentServicesPage() {
               Transformá tu empresa con páginas web, aplicaciones móvil y sistemas complejos con bases de datos. Nuestro equipo de desarrollo te entrega soluciones escalables hechas a medida para tus necesidades. 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
-                <Rocket className="w-5 h-5 mr-2" />
-                Empezá Tu Proyecto
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                <Phone className="w-5 h-5 mr-2" />
-                Discutir Ideas
-              </Button>
+              <Link className="cursor-pointer" href="#contacto">
+                <Button size="lg" className="cursor-pointer text-lg px-8">
+                  <Rocket className="w-5 h-5 mr-2" />
+                  Empezá Tu Proyecto
+                </Button>
+              </Link>
+              <Link className="cursor-pointer" href="tel:+541124611212">
+                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent cursor-pointer">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Discutir Ideas
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -218,12 +223,17 @@ export default function DevelopmentServicesPage() {
                 {/* IMAGEN — más alta */}
                 <div className="md:w-1/2">
                   <div className="h-72 md:h-[480px] relative bg-muted overflow-hidden">
+                  <Link
+                      href="https://cinemark-it.netlify.app/"
+                      target="_blank"
+                    >
                     <Image
-                      src={Sar}
-                      alt="Starlink Enterprise - terminal satelital empresarial"
-                      className="w-full h-full transform transition-transform duration-500 hover:scale-105"
+                      src={Sar2}
+                      alt="Sistema Autogestión de Racks"
+                      className="w-full h-full transform transition-transform duration-500 hover:scale-105 object-center"
                       priority={false}
                     />
+                    </Link>
                   </div>
                 </div>
 
@@ -341,7 +351,7 @@ export default function DevelopmentServicesPage() {
       </section>
       
       {/* Contact Section */}
-      <section className="py-16">
+      <section className="py-16" id="contacto">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -386,47 +396,45 @@ export default function DevelopmentServicesPage() {
               </div>
             </div>
             <div className="bg-background rounded-lg p-8 border">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Start Your Project</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6">Empezá tu Proyecto</h3>
               <form className="space-y-4">
+              <div>
+                  <label className="block text-sm font-medium text-foreground mb-1">Nombre de la Empresa (opcional)</label>
+                  <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
+                </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Project Type</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Número de teléfono</label>
+                  <input type="tel" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-1">Tipo de Proyecto</label>
                   <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>Web Application</option>
-                    <option>Mobile App</option>
-                    <option>Full-Stack System</option>
-                    <option>E-commerce Platform</option>
-                    <option>Custom Solution</option>
+                    <option>Aplicación Web</option>
+                    <option>App Móvil</option>
+                    <option>Sistema Full-Stack</option>
+                    <option>Plataforma E-Commerce</option>
+                    <option>Solución Personalizada</option>
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Budget Range</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Tiempo de Entrega</label>
                   <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>$5,000 - $15,000</option>
-                    <option>$15,000 - $50,000</option>
-                    <option>$50,000 - $100,000</option>
-                    <option>$100,000+</option>
+                    <option>Menos de 1 mes</option>
+                    <option>1-6 meses</option>
+                    <option>6-12 meses</option>
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Timeline</label>
-                  <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>1-3 months</option>
-                    <option>3-6 months</option>
-                    <option>6-12 months</option>
-                    <option>12+ months</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Project Description</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Descripción del Proyecto</label>
                   <textarea
                     className="w-full px-3 py-2 border border-border rounded-md bg-background"
                     rows={4}
-                    placeholder="Describe your project requirements, goals, and any specific features you need..."
+                    placeholder="Describí tus requerimientos, objetivos y cualquier funcionalidad específica que necesites..."
                   ></textarea>
                 </div>
                 <Button className="w-full">
                   <Rocket className="w-4 h-4 mr-2" />
-                  Get Project Quote
+                  Enviar Solicitud
                 </Button>
               </form>
             </div>

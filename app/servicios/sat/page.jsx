@@ -38,14 +38,18 @@ export default function SatelliteAntennasPage() {
               Conectate al mundo con sistemas de comunicación profesionales. Desde conexión de internet a transmisión de datos, ofrecemos soluciones satelitales de confianza. 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
-                Recibir Asesoramiento
-                <Signal className="w-5 h-5 ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                <Phone className="w-5 h-5 mr-2" />
-                Llamar a un Experto
-              </Button>
+              <Link href="#contacto">
+                <Button size="lg" className="text-lg px-8 cursor-pointer">
+                  Recibir Asesoramiento
+                  <Signal className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+              <Link href="tel:+541124611212">
+                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent cursor-pointer">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Llamar a un Experto
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -383,7 +387,7 @@ export default function SatelliteAntennasPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16">
+      <section className="py-16" id="contacto">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -428,45 +432,40 @@ export default function SatelliteAntennasPage() {
               </div>
             </div>
             <div className="bg-background rounded-lg p-8 border">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Satellite Coverage Check</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6">Asesoramiento Satelital</h3>
               <form className="space-y-4">
+              <div>
+                  <label className="block text-sm font-medium text-foreground mb-1">Nombre de la Empresa (opcional)</label>
+                  <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
+                </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Business Location</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Número de teléfono</label>
+                  <input type="tel" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-1">Ubicación</label>
                   <input
                     type="text"
-                    placeholder="Enter address or coordinates"
                     className="w-full px-3 py-2 border border-border rounded-md bg-background"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Service Type</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Tipo de Servicio</label>
                   <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>Satellite Internet</option>
-                    <option>Broadcast Reception</option>
-                    <option>VSAT Communication</option>
-                    <option>Backup Connectivity</option>
+                    <option>Internet Satelital</option>
+                    <option>Transmisión de Datos</option>
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Bandwidth Requirements</label>
-                  <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>Up to 25 Mbps</option>
-                    <option>25-100 Mbps</option>
-                    <option>100-500 Mbps</option>
-                    <option>500+ Mbps</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Special Requirements</label>
+                  <label className="block text-sm font-medium text-foreground mb-1">Requerimientos Especiales</label>
                   <textarea
                     className="w-full px-3 py-2 border border-border rounded-md bg-background"
                     rows={3}
-                    placeholder="Describe any specific needs..."
+                    placeholder="Describí cualquier necesidad específica..."
                   ></textarea>
                 </div>
                 <Button className="w-full">
-                  <Signal className="w-4 h-4 mr-2" />
-                  Check Coverage
+                  Enviar Solicitud
                 </Button>
               </form>
             </div>
