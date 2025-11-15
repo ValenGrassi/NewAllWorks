@@ -6,6 +6,26 @@ import { Heart, Users, Target, Award, Lightbulb, Handshake, Scale } from "lucide
 import Image from "next/image"
 import AboutUs from "../../public/aboutUs.png"
 import Norby from "../../public/norby.jpeg"
+import AmericanC from "../../public/empresas/AmericanC Final.jpg"
+import americatampas from "../../public/empresas/americatampas.png"
+import atl from "../../public/empresas/atl.jpg"
+import cinecolor from "../../public/empresas/Cinecolor Final.jpg"
+import cinemark from "../../public/empresas/cinemark-hoyts-cuadrado.png"
+import cinepolis from "../../public/empresas/cinepolis.png"
+import dze from "../../public/empresas/DZE Final.jpg"
+import feedback from "../../public/empresas/Feedback Seguridad.jpg"
+import fundacion from "../../public/empresas/fundacion.png"
+import mccan from "../../public/empresas/mccan.jpg"
+import multiplex from "../../public/empresas/multiplex.jpg"
+import nomade from "../../public/empresas/nomade.png"
+import nubo from "../../public/empresas/nubo.jpg"
+import PowerChina from "../../public/empresas/PowerChina Final.jpg"
+import Rotofrance from "../../public/empresas/Rotofrance Final.jpg"
+import showcase from "../../public/empresas/showcase.png"
+import sonrisas from "../../public/empresas/sonrisas_argentinas_logo.jpg"
+import sti from "../../public/empresas/sti.png"
+import wamco from "../../public/empresas/Wamco Final.jpg"
+import zarate from "../../public/empresas/zarate.png" 
 
 export default function AboutPage() {
   return (
@@ -170,6 +190,77 @@ export default function AboutPage() {
     </div>
   </div>
 </section>
+<section className="py-16 bg-muted/30" id="clientes">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Nuestra Cartera de Clientes</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Todos ellos confiaron en nosotros</p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={AmericanC} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={americatampas} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={atl} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={cinecolor} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={cinemark} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={cinepolis} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={dze} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={feedback} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={fundacion} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={mccan} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={multiplex} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={nomade} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={nubo} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={PowerChina} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={Rotofrance} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={showcase} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={sonrisas} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={sti} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={wamco} className="aspect-square" />
+            </div>
+            <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
+              <Image src={zarate} className="aspect-square" />
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <Footer />

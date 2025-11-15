@@ -57,20 +57,20 @@ const clients = [
     logo: "/DZE Final.jpg",
   },
   {
-    name: "Rotofrance",
-    industry: "Logistics",
-    icon: Briefcase,
-    services: ["Satellite Tracking", "Security Systems", "Server Infrastructure"],
-    testimonial: "Real-time tracking and monitoring capabilities have revolutionized our operations.",
-    logo: "/Rotofrance Final.jpg",
-  },
-  {
     name: "PowerChina",
     industry: "Cines",
     icon: Building2,
     services: ["Building Automation", "Security Cameras", "Network Systems"],
     testimonial: "Smart building solutions that enhance tenant experience and operational efficiency.",
     logo: "/PowerChina Final.jpg",
+  },
+  {
+    name: "Fundación Walsh-Facio",
+    industry: "Fundación",
+    icon: Briefcase,
+    services: ["Satellite Tracking", "Security Systems", "Server Infrastructure"],
+    testimonial: "Real-time tracking and monitoring capabilities have revolutionized our operations.",
+    logo: "/empresas/fundacion.png",
   },
 ]
 
@@ -155,6 +155,13 @@ export function ClientsSection() {
               </Card>
             )
           })}
+        </div>
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-4">
+            <div className="w-12 h-px bg-border"></div>
+            <Link href="/nosotros#clientes" className="text-sm text-muted-foreground uppercase tracking-wider hover:scale-110 transition-all">ver todos los clientes</Link>
+            <div className="w-12 h-px bg-border"></div>
+          </div>
         </div>
 
         <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 rounded-3xl p-8 lg:p-12 text-white overflow-hidden">
