@@ -388,36 +388,98 @@ export default function NetworkInstallationPage() {
             </div>
             <div className="bg-background rounded-lg p-8 border">
               <h3 className="text-2xl font-bold text-foreground mb-6">Asesoramiento de Redes Informáticas</h3>
-              <form className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Nombre de la Empresa (opcional)</label>
-                  <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Contacto IT</label>
-                  <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
-                </div>
-                <div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Número de teléfono</label>
-                  <input type="tel" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
-                </div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Número de Usuarios</label>
-                  <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>5-50 usuarios</option>
-                    <option>51-100 usuarios</option>
-                    <option>100+ usuarios</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Descripción del Proyecto</label>
-                  <textarea placeholder="Contanos tu necesidad a resolver..."
-                    className="w-full px-3 py-2 border border-border rounded-md bg-background"
-                    rows={3}
-                  ></textarea>
-                </div>
-                <Button className="w-full">Enviar Solicitud</Button>
-              </form>
+              <form
+  className="space-y-4"
+  action="https://formspree.io/f/xayzwvry"
+  method="POST"
+  onSubmit={async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const submitBtn = form.querySelector("button");
+    const originalText = submitBtn.textContent;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Enviando...";
+
+    const data = new FormData(form);
+
+    const res = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (res.ok) {
+      submitBtn.textContent = "Enviado ✓";
+      form.reset();
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }, 2500);
+    } else {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Error, reintentar";
+      setTimeout(() => (submitBtn.textContent = originalText), 2500);
+    }
+  }}
+>
+
+<div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+    Nombre Tuyo / Nombre de tu Empresa
+    </label>
+    <input
+      name="empresa"
+      type="text"
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+      Número de teléfono
+    </label>
+    <input
+      name="telefono"
+      type="tel"
+      required
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+      Número de Usuarios
+    </label>
+    <select
+      name="usuarios"
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+    >
+      <option>5-50 usuarios</option>
+      <option>51-100 usuarios</option>
+      <option>100+ usuarios</option>
+    </select>
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+      Descripción del Proyecto
+    </label>
+    <textarea
+      name="descripcion_proyecto"
+      placeholder="Contanos tu necesidad a resolver..."
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+      rows={3}
+      required
+    ></textarea>
+  </div>
+
+  <Button className="w-full cursor-pointer" type="submit">
+    Enviar Solicitud
+  </Button>
+
+</form>
             </div>
           </div>
         </div>

@@ -332,27 +332,27 @@ export default function SatelliteAntennasPage() {
               {
                 step: "01",
                 title: "Estudio del Lugar",
-                description: "Assess location, line-of-sight, and mounting requirements",
+                description: "Evaluamos el sitio, la línea de vista y los requisitos para el montaje.",
               },
               {
                 step: "02",
                 title: "Diseño del Sistema",
-                description: "Configure optimal satellite system for your needs",
+                description: "Configuramos el sistema satelital óptimo según tus necesidades.",
               },
               {
                 step: "03",
                 title: "Instalación",
-                description: "Install antenna, mount, and associated equipment",
+                description: "Instalamos la antena, el soporte, el cableado y todo el equipo necesario.",
               },
               {
                 step: "04",
                 title: "Captación de Señal",
-                description: "Precise satellite pointing and signal optimization",
+                description: "Alineamos la antena con precisión y optimizamos la señal.",
               },
               {
                 step: "05",
                 title: "Pruebas y Optimización",
-                description: "System testing and user training",
+                description: "Realizamos pruebas finales del sistema y brindamos capacitación al usuario.",
               },
             ].map((item, index) => (
               <div key={index} className="text-center">
@@ -380,7 +380,7 @@ export default function SatelliteAntennasPage() {
                   </Badge>
                   <div>
                     <h3 className="font-semibold text-foreground">Instalaciones Certificadas</h3>
-                    <p className="text-muted-foreground text-sm">Licensed technicians with satellite expertise</p>
+                    <p className="text-muted-foreground text-sm">Técnicos certificados con experiencia en sistemas satelitales</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -389,7 +389,7 @@ export default function SatelliteAntennasPage() {
                   </Badge>
                   <div>
                     <h3 className="font-semibold text-foreground">Equipamiento Profesional</h3>
-                    <p className="text-muted-foreground text-sm">Professional-grade antennas and components</p>
+                    <p className="text-muted-foreground text-sm">Antenas y componentes de nivel profesional</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -398,7 +398,7 @@ export default function SatelliteAntennasPage() {
                   </Badge>
                   <div>
                     <h3 className="font-semibold text-foreground">Potección al clima</h3>
-                    <p className="text-muted-foreground text-sm">All-weather installation and equipment</p>
+                    <p className="text-muted-foreground text-sm">AllInstalación y equipos preparados para todo tipo de clima</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -407,7 +407,7 @@ export default function SatelliteAntennasPage() {
                   </Badge>
                   <div>
                     <h3 className="font-semibold text-foreground">Soporte continuo</h3>
-                    <p className="text-muted-foreground text-sm">Maintenance and technical support services</p>
+                    <p className="text-muted-foreground text-sm">Servicios de mantenimiento y asistencia técnica</p>
                   </div>
                 </div>
               </div>
