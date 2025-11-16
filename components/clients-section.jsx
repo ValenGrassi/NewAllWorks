@@ -4,6 +4,7 @@ import { Card, CardContent } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
 import { Building2, Factory, ShoppingBag, GraduationCap, Heart, Briefcase, Rocket, DollarSign, Phone, Film, Popcorn, Clapperboard } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 const whatMakesUsSpecial = [
   {
