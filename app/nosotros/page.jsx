@@ -199,7 +199,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
-              <Image src={AmericanC} className="aspect-square" />
+              <Image src={"./empresas/AmericanC Final.jpg"} width={400} height={400} className="aspect-square" />
             </div>
             <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
               <Image src={americatampas} className="aspect-square" />
@@ -238,7 +238,7 @@ export default function AboutPage() {
               <Image src={nubo} className="aspect-square" />
             </div>
             <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
-              <Image src={PowerChina} className="aspect-square" />
+              <Image src={"./empresas/PowerChina Final.jpg"} width={400} height={400} className="aspect-square" />
             </div>
             <div className="bg-background rounded-xl p-8 text-center flex items-center justify-center">
               <Image src={Rotofrance} className="aspect-square" />
