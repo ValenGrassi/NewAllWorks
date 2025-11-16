@@ -34,21 +34,21 @@ export function HeroSection() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
                 <Shield className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-foreground mb-1">Confiable</h3>
+              <h2 className="text-3xl font-semibold text-foreground mb-1">Confiable</h2>
               <p className="text-sm text-muted-foreground">+30 años de experiencia</p>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
                 <Users className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-foreground mb-1">Expertos</h3>
+              <h3 className="text-3xl font-semibold text-foreground mb-1">Expertos</h3>
               <p className="text-sm text-muted-foreground">Profesionales Certificados</p>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
                 <Zap className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-foreground mb-1">Eficientes</h3>
+              <h3 className="text-3xl font-semibold text-foreground mb-1">Eficientes</h3>
               <p className="text-sm text-muted-foreground">Respuestas sin demora</p>
             </div>
           </div>

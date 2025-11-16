@@ -123,7 +123,9 @@ export function ClientsSection() {
                     <Image
                       src={client.logo || "/placeholder.svg"}
                       alt={`${client.name} logo`}
-                      className="h-24 opacity-60 group-hover:opacity-100 transition-opacity"
+                      width={95}
+                      height={95}
+                      className="opacity-60 group-hover:opacity-100 transition-opacity"
                     />
                     <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
                       <IconComponent className="w-5 h-5 text-muted-foreground" />
