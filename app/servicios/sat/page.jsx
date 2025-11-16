@@ -98,21 +98,21 @@ export default function SatelliteAntennasPage() {
               <CardHeader>
                 <SatelliteDish className="w-12 h-12 text-primary mb-4" />
                 <CardTitle>Transmisión de Datos</CardTitle>
-                <CardDescription>TV and radio broadcast antenna systems</CardDescription>
+                <CardDescription>Instalamos y configuramos sistemas de transmisión de datos punto a punto para garantizar conectividad estable y de alta velocidad entre diferentes ubicaciones</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Calidad de imagen HD/4K</span>
+                    <span className="text-sm">Enlaces inalámbricos de largo alcance</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Recepción multi-satelital</span>
+                    <span className="text-sm">Alta estabilidad y baja latencia</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Distribución comercial</span>
+                    <span className="text-sm">Soluciones escalables para redes empresariales</span>
                   </li>
                 </ul>
               </CardContent>
@@ -187,7 +187,7 @@ export default function SatelliteAntennasPage() {
         { src: Unicenter, title: "Cinépolis Unicenter" },
         { src: Tortugas, title: "Cinemark Tortugas Open Mall" },
         { src: Lujan, title: "Cinépolis Luján" },
-        { src: Avellaneda, title: "Starlink Avellaneda" },
+        { src: Avellaneda, title: "Cinemark Avellaneda" },
       ].map((item, index) => (
         <div
           key={index}

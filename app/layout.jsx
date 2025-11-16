@@ -5,7 +5,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'All Works - Soluciones Informáticas y Seguridad',
-  description: 'All Works es un proveedor líder de servicios informáticos y tecnologías de vanguardia. Contactanos para obtener más información sobre cómo podemos ayudarte.',
+  description: 'All Works es un proveedor líder de servicios informáticos y tecnologías de vanguardia. Contactanos para obtener más información sobre cómo podemos ayudarte.'
 }
 
 export default function RootLayout({

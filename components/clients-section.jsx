@@ -119,7 +119,7 @@ export function ClientsSection() {
                 <CardContent className="p-8">
                   {/* Client Logo */}
                   <div className="flex items-center justify-between mb-6">
-                    <img
+                    <Image
                       src={client.logo || "/placeholder.svg"}
                       alt={`${client.name} logo`}
                       className="h-24 opacity-60 group-hover:opacity-100 transition-opacity"
