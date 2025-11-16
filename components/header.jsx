@@ -55,7 +55,7 @@ export function Header() {
               </div>
             </DropdownTippy>
 
-            <Link href="/#expertise" className="text-foreground hover:text-primary transition-all hover:opacity-70">Clientes</Link>
+            <Link href="/#clientes" className="text-foreground hover:text-primary transition-all hover:opacity-70">Clientes</Link>
             <Link href="/#contact" className="text-foreground hover:text-primary transition-all hover:opacity-70">Contacto</Link>
           </nav>
           </div>

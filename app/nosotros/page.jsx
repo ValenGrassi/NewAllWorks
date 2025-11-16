@@ -53,8 +53,8 @@ export default function AboutPage() {
               <div className="order-2 md:order-1">
                 <h2 className="text-3xl font-bold text-foreground mb-6">Nuestra Historia</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>Nuestra empresa nació en los 90's con una idea clara: la tecnología debe simplificar, no complicar. Lo que empezó con un grupo de técnicos apasionados se transformó en un equipo que brinda soluciones integrales en cámaras, redes y desarrollo a empresas de todo el país.</p>
-                  <p>Aprendimos trabajando, enfrentando desafíos reales, optimizando instalaciones y viendo cómo cada sistema terminado aportaba valor a quienes confiaron en nosotros. Esas experiencias nos formaron y nos dieron la visión que hoy aplicamos en cada proyecto.</p>
+                  <p>Nuestra empresa nació en los años 90 con una idea clara: la tecnología debe simplificar la vida, no complicarla. Lo que empezó como un equipo de técnicos apasionados, hoy es un grupo de profesionales que brinda soluciones integrales en cámaras, redes y desarrollo a empresas de todo el país.</p>
+                  <p>Crecimos trabajando en el campo, resolviendo desafíos reales, optimizando instalaciones y viendo cómo cada sistema terminado aportaba valor a quienes confiaron en nosotros. Esa experiencia nos formó y nos dio la visión que aplicamos en cada proyecto.</p>
                   <p>En cada trabajo que realizamos buscamos algo más que cumplir: buscamos mejorar, innovar y garantizar que cada cliente tenga la seguridad, conectividad y confianza que su empresa necesita para seguir creciendo. Eso es lo que nos motiva día a día.</p>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Nuestros Valores</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Los principios que guian todo lo que hacemos</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Los principios que guían cada decisión y cada proyecto que llevamos adelante</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 <Scale className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Integridad</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">Creemos en comunicación honesta, precios claros y justos, no queremos más que lo que nos merecemos.</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">Creemos en una comunicación honesta, en trabajar con total transparencia y en actuar siempre con responsabilidad. Nuestro crecimiento se basa en la calidad de lo que hacemos y en el compromiso real con cada proyecto.</p>
             </div>
 
             <div className="bg-background rounded-xl p-8 text-center">
@@ -104,7 +104,7 @@ export default function AboutPage() {
                 <Lightbulb className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Innovación</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">Nos mantenemos al día con las nuevas tecnologías para brindar soluciones efectivas y perfectas para el futuro.</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">Nos mantenemos al día con las nuevas tecnologías para brindar soluciones soluciones eficientes, actuales y preparadas para el futuro.</p>
             </div>
 
             <div className="bg-background rounded-xl p-8 text-center">
@@ -112,7 +112,7 @@ export default function AboutPage() {
                 <Handshake className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Compromiso</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">Tu éxito es nuestro éxito. Crecemos junto a vos, construyendo relaciones basadas en confianza y resultados.</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">Tu éxito es nuestro objetivo. Crecemos junto a vos, construyendo relaciones basadas en confianza y resultados.</p>
             </div>
           </div>
         </div>

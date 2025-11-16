@@ -128,8 +128,7 @@ export default function NetworkInstallationPage() {
               Instalación de Redes Empresariales
             </h1>
             <p className="text-xl text-muted-foreground mb-8 text-pretty">
-              Construimos una infraestructura de redes robusta y escalable para tu negocio. Desde cableado estructurado a redes inalámbricas, ofrecemos soluciones confiables para que nunca te quedes sin conectividad.
-            </p>
+            Diseñamos e implementamos infraestructuras de red robustas, seguras y escalables. Desde cableado estructurado hasta redes inalámbricas de alto rendimiento, brindamos soluciones confiables para que tu empresa cuente siempre con la conectividad que necesita.            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href={"#asesoramiento"}><Button size="lg" className="text-lg px-8 cursor-pointer">
                 Recibir Asesoramiento
@@ -160,22 +159,22 @@ export default function NetworkInstallationPage() {
                 <Cable className="w-12 h-12 text-primary mb-4" />
                 <CardTitle>Cableado Estructurado</CardTitle>
                 <CardDescription>
-                  Sistema de cableado profesional para una transmisión de datos confiable
+                Implementamos sistemas de cableado profesional que garantizan una transmisión de datos estable, segura y de alto rendimiento.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Cables certificados Cat6/6a de marcas líder</span>
+                    <span className="text-sm">Cables certificados Cat6/6a de marcas líderes</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Sistema de cableado organizado</span>
+                    <span className="text-sm">Instalaciones organizadas y optimizadas</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm">Etiquetado y documentación</span>
+                    <span className="text-sm">Etiquetado completo y documentación técnica para futuras ampliaciones o mantenimiento</span>
                   </li>
                 </ul>
               </CardContent>
@@ -238,8 +237,7 @@ export default function NetworkInstallationPage() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-foreground mb-4">Nuestros Racks</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Diseñamos y organizamos racks profesionales siguiendo estándares (TIA/EIA). Todo instalado y documentado.
-          </p>
+          Diseñamos, organizamos e implementamos racks profesionales siguiendo estándares TIA/EIA. Cada instalación se realiza de forma ordenada, segura y completamente documentada para facilitar mantenimiento y futuras ampliaciones.          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

@@ -28,8 +28,7 @@ export default function DevelopmentServicesPage() {
               Desarrollo de Software Personalizado
             </h1>
             <p className="text-xl text-muted-foreground mb-8 text-pretty">
-              Transformá tu empresa con páginas web, aplicaciones móvil y sistemas complejos con bases de datos. Nuestro equipo de desarrollo te entrega soluciones escalables hechas a medida para tus necesidades. 
-            </p>
+            Impulsá la transformación digital de tu empresa con sitios web, aplicaciones móviles y sistemas a medida con bases de datos robustas. Nuestro equipo de desarrollo crea soluciones escalables, seguras y adaptadas exactamente a las necesidades de tu negocio.            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link className="cursor-pointer" href="#contacto">
                 <Button size="lg" className="cursor-pointer text-lg px-8">
