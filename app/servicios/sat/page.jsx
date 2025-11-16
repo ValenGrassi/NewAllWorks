@@ -1,3 +1,4 @@
+"use client"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -124,18 +125,19 @@ export default function SatelliteAntennasPage() {
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Satellite Applications</h2>
-            <p className="text-lg text-muted-foreground">Versatile solutions for various industries</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Aplicaciones Satelitales</h2>
+            <p className="text-lg text-muted-foreground">Soluciones diversas para múltiples industrias
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-primary-foreground" />
+              <span className="text-3xl font-bold text-primary-foreground">🚜</span>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Remote Locations</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Zonas Rurales y Remotas</h3>
               <p className="text-muted-foreground text-sm">
-                Internet access where terrestrial connections aren't available
+              Conectividad garantizada en áreas sin acceso a fibra óptica. Ideal para campos, islas, obras o viviendas alejadas.
               </p>
             </div>
 
@@ -143,24 +145,24 @@ export default function SatelliteAntennasPage() {
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary-foreground">🏢</span>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Corporate Offices</h3>
-              <p className="text-muted-foreground text-sm">Backup connectivity and redundant internet access</p>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Empresas y Oficinas</h3>
+              <p className="text-muted-foreground text-sm">Internet para asegurar continuidad operativa, videoconferencias estables y enlaces dedicados para trabajo crítico.</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary-foreground">🏭</span>
+                <span className="text-3xl font-bold text-primary-foreground">🏭</span>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Industrial Sites</h3>
-              <p className="text-muted-foreground text-sm">Reliable communication for manufacturing and operations</p>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Industrias y Plantas Operativas</h3>
+              <p className="text-muted-foreground text-sm">Comunicación segura entre equipos, monitoreo remoto y soporte para sistemas de control industrial.</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary-foreground">📡</span>
+                <span className="text-3xl font-bold text-primary-foreground">🏗️</span>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Broadcasting</h3>
-              <p className="text-muted-foreground text-sm">TV and radio signal distribution systems</p>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Construcción y Obras</h3>
+              <p className="text-muted-foreground text-sm">Internet temporal de alta velocidad para obras en zonas sin infraestructura. Perfecto para cámaras (monitoreo), arquitectos, ingenieros y casillas de obra.</p>
             </div>
           </div>
         </div>
@@ -412,41 +414,109 @@ export default function SatelliteAntennasPage() {
             </div>
             <div className="bg-background rounded-lg p-8 border">
               <h3 className="text-2xl font-bold text-foreground mb-6">Asesoramiento Satelital</h3>
-              <form className="space-y-4">
-              <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Nombre de la Empresa (opcional)</label>
-                  <input type="text" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Número de teléfono</label>
-                  <input type="tel" className="w-full px-3 py-2 border border-border rounded-md bg-background" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Ubicación</label>
-                  <input
-                    type="text"
-                    className="w-full px-3 py-2 border border-border rounded-md bg-background"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Tipo de Servicio</label>
-                  <select className="w-full px-3 py-2 border border-border rounded-md bg-background">
-                    <option>Internet Satelital</option>
-                    <option>Transmisión de Datos</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Requerimientos Especiales</label>
-                  <textarea
-                    className="w-full px-3 py-2 border border-border rounded-md bg-background"
-                    rows={3}
-                    placeholder="Describí cualquier necesidad específica..."
-                  ></textarea>
-                </div>
-                <Button className="w-full">
-                  Enviar Solicitud
-                </Button>
-              </form>
+              <form
+  className="space-y-4"
+  action="https://formspree.io/f/xayzwvry"
+  method="POST"
+  onSubmit={async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const submitBtn = form.querySelector("button");
+    const originalText = submitBtn.textContent;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Enviando...";
+
+    const data = new FormData(form);
+
+    const res = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (res.ok) {
+      submitBtn.textContent = "Enviado ✓";
+      form.reset();
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }, 2500);
+    } else {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Error, reintentar";
+      setTimeout(() => (submitBtn.textContent = originalText), 2500);
+    }
+  }}
+>
+  <div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+      Nombre Tuyo / Nombre de tu Empresa
+    </label>
+    <input
+      name="nombre"
+      type="text"
+      required
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+      Número de teléfono
+    </label>
+    <input
+      name="telefono"
+      type="tel"
+      required
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+      Ubicación
+    </label>
+    <input
+      name="ubicacion"
+      type="text"
+      required
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+      Tipo de Servicio
+    </label>
+    <select
+      name="servicio"
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+    >
+      <option>Internet Satelital</option>
+      <option>Transmisión de Datos</option>
+    </select>
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-foreground mb-1">
+      Requerimientos Especiales
+    </label>
+    <textarea
+      name="requerimientos"
+      className="w-full px-3 py-2 border border-border rounded-md bg-background"
+      rows={3}
+      placeholder="Describí cualquier necesidad específica..."
+    ></textarea>
+  </div>
+
+  <Button className="w-full cursor-pointer" type="submit">
+    Enviar Solicitud
+  </Button>
+</form>
             </div>
           </div>
         </div>

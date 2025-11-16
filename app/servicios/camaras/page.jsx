@@ -3,51 +3,10 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Shield, Eye, Zap, CheckCircle, Phone, Cctv, Wifi, Cable, UserRoundCog, LucideMousePointer } from "lucide-react"
-import Rotofrance from "../../../public/rotofranceCamaras.jpeg"
+import { CheckCircle, Phone, Cctv, Wifi, Cable, UserRoundCog, LucideMousePointer } from "lucide-react"
 import Image from "next/image"
 import Panel from "../../../public/camaraPanel.webp"
 import Link from "next/link"
-
-
-const uniqueApproach = [
-  {
-    icon: Rotofrance,
-    title: "All Works Ingeniería",
-    desc: "Redes que nunca duermen",
-    gradient: "from-gray-50 to-gray-200 shadow-md shadow-gray-400/30",
-  },
-  {
-    icon: Rotofrance,
-    title:"All Works Satelites",
-    desc: "Energía limpia, sistemas inteligentes",
-    gradient: "from-gray-50 to-gray-200 shadow-md shadow-gray-400/30",
-  },
-  {
-    icon: Rotofrance,
-    title: "All Works Pages",
-    desc:"Software construido para durar",
-    gradient: "from-gray-50 to-gray-200 shadow-md shadow-gray-400/30",
-  },
-  {
-    icon: Rotofrance,
-    title: "All Works Ingeniería",
-    desc: "Redes que nunca duermen",
-    gradient: "from-gray-50 to-gray-200 shadow-md shadow-gray-400/30",
-  },
-  {
-    icon: Rotofrance,
-    title:"All Works Satelites",
-    desc: "Energía limpia, sistemas inteligentes",
-    gradient: "from-gray-50 to-gray-200 shadow-md shadow-gray-400/30",
-  },
-  {
-    icon: Rotofrance,
-    title: "All Works Pages",
-    desc:"Software construido para durar",
-    gradient: "from-gray-50 to-gray-200 shadow-md shadow-gray-400/30",
-  },
-]
 
 export default function CameraInstallationPage() {
   return (
@@ -407,7 +366,7 @@ export default function CameraInstallationPage() {
                     <option>30+ cámaras</option>
                   </select>
                 </div>
-                <Button className="w-full">Enviar Solicitud</Button>
+                <Button className="w-full cursor-pointer">Enviar Solicitud</Button>
               </form>
             </div>
           </div>
